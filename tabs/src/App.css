@@ -12,6 +12,11 @@
   margin-top: 5rem;
 }
 
+.tabs {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
 .tabs button {
   background: none;
   border: none;
