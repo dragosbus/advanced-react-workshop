@@ -8,7 +8,7 @@ import { Panel } from './components/Panel/Panel';
 import * as text from './text';
 import './App.css';
 
-const createPanelsHandler = text => [
+const panels = [
   {
     btn: <FaCar />,
     panel: text.cars
@@ -47,8 +47,8 @@ class App extends Component {
     this.setState({ activeTab: id });
   };
 
-  renderPanel = text => {
-    const currentPanel = createPanelsHandler(text)[this.state.activeTab].panel;
+  renderPanel = () => {
+    const currentPanel = panels[this.state.activeTab].panel;
     return <Panel text={currentPanel} />;
   };
 
@@ -60,9 +60,9 @@ class App extends Component {
           changeActivePanel={this.changeActivePanel}
           text={text}
           tabStyle={TabsStyle}
-          createPanelsHandler={createPanelsHandler}
+          panels={panels}
         />
-        {this.renderPanel(text)}
+        {this.renderPanel()}
       </div>
     );
   }
