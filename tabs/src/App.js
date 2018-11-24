@@ -10,22 +10,22 @@ import './App.css';
 
 const panels = [
   {
-    btn: <FaCar />,
+    label: <FaCar />,
     disabled: false,
     panel: text.cars
   },
   {
-    btn: <FaBed />,
+    label: <FaBed />,
     disabled: false,
     panel: text.hotels
   },
   {
-    btn: <FaPlane />,
+    label: <FaPlane />,
     disabled: false,
     panel: text.flights
   },
   {
-    btn: <FaSpaceShuttle />,
+    label: <FaSpaceShuttle />,
     disabled: true,
     panel: text.space
   }
