@@ -27,6 +27,14 @@
   fill: rgb(29, 52, 73);
 }
 
+.tab-active {
+
+}
+
+.tab-disabled svg {
+  fill: rgba(29, 52, 73, 0.459);
+}
+
 .panel {
   padding: 1rem;
   animation: fade-in 0.5s ease-in;

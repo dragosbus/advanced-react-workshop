@@ -26,7 +26,7 @@ const panels = [
   },
   {
     btn: <FaSpaceShuttle />,
-    disabled: false,
+    disabled: true,
     panel: text.space
   }
 ];
