@@ -11,18 +11,22 @@ import './App.css';
 const panels = [
   {
     btn: <FaCar />,
+    disabled: false,
     panel: text.cars
   },
   {
     btn: <FaBed />,
+    disabled: false,
     panel: text.hotels
   },
   {
     btn: <FaPlane />,
+    disabled: false,
     panel: text.flights
   },
   {
     btn: <FaSpaceShuttle />,
+    disabled: false,
     panel: text.space
   }
 ];
@@ -49,7 +53,7 @@ class App extends Component {
 
   renderPanel = () => {
     const currentPanel = panels[this.state.activeTab].panel;
-    return <Panel text={currentPanel} />;
+    return <Panel render={currentPanel} />;
   };
 
   render() {

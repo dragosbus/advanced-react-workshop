@@ -6,7 +6,7 @@ export const Tabs = props => {
   return (
     <div className="tabs" style={tabStyle(props)}>
       {panels.map((panel, i) => (
-        <Tab key={i} changeActivePanel={() => changeActivePanel(i)}>
+        <Tab key={i} disabled={panel.disabled} changeActivePanel={() => changeActivePanel(i)}>
           {panel.btn}
         </Tab>
       ))}
