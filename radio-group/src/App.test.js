@@ -7,11 +7,8 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('<App/>', () => {
   const app = shallow(<App/>);
-  
-  beforeEach(() => {
-    app.find('RadioButton').at(0).simulate('click');
-  });
-  it('should have active class', ()=>{
-    expect(app.find('RadioButton').at(0).hasClass('active')).toBe(true);
+
+  it('the initial value should be play button', ()=>{
+    expect(app.find('RadioGroup').prop('defaultValue')).toBe('play');
   });
 });

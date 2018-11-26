@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <RadioGroup legend='Radio Group' defaultValue={'play'}>
+        <RadioGroup legend='Radio Group' defaultValue='play'>
           <RadioButton value='back'>
             <FaBackward />
           </RadioButton>
